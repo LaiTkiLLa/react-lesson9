@@ -62,6 +62,7 @@ function App() {
                             <Route path='/news/:id' element={<New/>}></Route>
                         </> : <Route path='/'
                                      element={<Auth auth={auth} handleAuth={handleAuth} setAuth={setAuth}/>}></Route>}
+                    <Route path='*' element={<div>Страницы не существует</div>}></Route>
                 </Routes>
             </div>
         </div>

@@ -32,7 +32,7 @@ export const News: React.FC<{ token: string }> = ({token}) => {
             {news?.map(item => (
                 <NavLink to={`/news/${item.id}`} style={{textDecoration: 'none', color: 'black'}} key={item.id} >
                     <div style={styles}>
-                        <div style={{}}><img src={item.image} alt="Изображение"/></div>
+                        <div><img src={item.image} alt="Изображение"/></div>
                         <div>{item.title}</div>
                         <div>{item.content}</div>
                     </div>
